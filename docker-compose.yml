@@ -4,7 +4,7 @@ services:
     image: postgres:15
     environment:
       POSTGRES_DB: demo_db
-      POSTGRES_USER: postgres
+      POSTGRES_USER: postgres1
       POSTGRES_PASSWORD: '1234'
     ports:
       - "5433:5432"
@@ -15,7 +15,7 @@ services:
       dockerfile: Dockerfile
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/demo_db
-      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_USERNAME: postgres1
       SPRING_DATASOURCE_PASSWORD: '1234'
     depends_on:
       - db
