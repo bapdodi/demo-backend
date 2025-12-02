@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: demo-backend
-          image: cycle123/demo-backend:485f6d91cb2f93cd1dfbaab1423e21200543e2bf
+          image: cycle123/demo-backend:0b08710354d0289a9e406fb30186dd7b3e0ed47f
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
