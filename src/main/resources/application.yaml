@@ -1,8 +1,8 @@
 spring:
   datasource:
     # Allow overriding via environment variable SPRING_DATASOURCE_URL
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/demo_db}
-    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/demo_db}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres1}
     password: ${SPRING_DATASOURCE_PASSWORD:1234}
     driver-class-name: org.postgresql.Driver
 

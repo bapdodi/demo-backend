@@ -4,17 +4,13 @@ metadata:
   name: demo-ingress
   namespace: demo-app
   annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+
     nginx.ingress.kubernetes.io/proxy-body-size: "50m"
 spec:
   ingressClassName: nginx
-  tls:
-    - hosts:
-        - api.moodie.shop
-      secretName: demo-tls
+
   rules:
-    - host: api.moodie.shop
-      http:
+    - http:  
         paths:
           - path: /
             pathType: Prefix
